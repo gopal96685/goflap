@@ -57,14 +57,12 @@ func NewScene(r *sdl.Renderer) (*scene, error) {
 
 	var bird bird
 	err = bird.loadTheBird(r)
-	fmt.Println("loaded the birds", len(bird.birds))
 	if err != nil {
 		return nil, fmt.Errorf("could not load bird: %v", err)
 	}
 
 	var pipes pipes
 	err = pipes.loadThePipes(r)
-	fmt.Println("loaded the pipes")
 	if err != nil {
 		return nil, fmt.Errorf("could not load pipes: %v", err)
 	}
@@ -106,6 +104,7 @@ func (s *scene) handlerEvent(event sdl.Event) bool {
 	case *sdl.QuitEvent:
 		return true
 	case *sdl.KeyboardEvent, *sdl.MouseMotionEvent, *sdl.TextEditingEvent:
+		go playClickSound()
 		s.bird.speed_y = -5
 		return false
 	default:
@@ -148,7 +147,7 @@ func (s *scene) destroy() error {
 }
 
 func (s *scene) addLevel(r *sdl.Renderer) error {
-	f, err := ttf.OpenFont("./res/fonts/Flappy.ttf", 20)
+	f, err := ttf.OpenFont("./res/fonts/GoFlap.ttf", 20)
 	if err != nil {
 		return fmt.Errorf("could not init font: %v", err)
 	}
@@ -174,7 +173,7 @@ func (s *scene) addLevel(r *sdl.Renderer) error {
 }
 
 func (s *scene) addScore(r *sdl.Renderer) error {
-	f, err := ttf.OpenFont("./res/fonts/Flappy.ttf", 20)
+	f, err := ttf.OpenFont("./res/fonts/GoFlap.ttf", 20)
 	if err != nil {
 		return fmt.Errorf("could not init font: %v", err)
 	}

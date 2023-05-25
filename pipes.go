@@ -47,7 +47,6 @@ func (ps *pipes) paintThePipes(r *sdl.Renderer, s *scene) error {
 		return fmt.Errorf("cannot update further, you died")
 	}
 
-	fmt.Println(len(ps.allPipes))
 	for _, p := range ps.allPipes {
 		var flip sdl.RendererFlip
 		rect := &sdl.Rect{
