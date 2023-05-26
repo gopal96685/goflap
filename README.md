@@ -3,7 +3,7 @@
 ![goflap](https://github.com/gopal96685/goflap/blob/develop/screenshot1.png)
 
 
-Flappy Bird is a simple and addictive game developed using Golang. The objective of the game is to navigate a bird through a series of pipes without hitting them or the boundaries of the game window.
+Goflap is a simple and addictive game developed using Golang. The objective of the game is to navigate a bird through a series of pipes without hitting them or the boundaries of the game window.
 
 ## Features
 
@@ -55,7 +55,7 @@ go build
 
 3. The game will continue until the bird collides with a pipe or the game window's boundaries.
 
-![Gameplay](https://github.com/gopal96685/goflap/blob/develop/screenshot2.png)
+![goflap](https://github.com/gopal96685/goflap/blob/develop/screenshot2.png)
 
 ## Contributing
 
