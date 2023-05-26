@@ -93,7 +93,7 @@ func run() error {
 
 	_ = r
 
-	if err = drawTitle(r, "Gopher Bird"); err != nil {
+	if err = drawTitle(r, "goflap"); err != nil {
 		return fmt.Errorf("could not draw title: %v", err)
 	}
 
