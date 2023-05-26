@@ -86,11 +86,10 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 - The Flappy Bird game concept was originally created by Dong Nguyen.
-- The game development tutorial and code snippets provided by OpenAI GPT-3.5.
 
 ## Contact
 
-For any inquiries or suggestions, please contact [your-name](mailto:your-email@example.com).
+For any inquiries or suggestions, please contact [gopal](mailto:gopal96685@gmail.com).
 
 
 
