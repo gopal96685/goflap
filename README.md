@@ -55,7 +55,7 @@ go build
 
 3. The game will continue until the bird collides with a pipe or the game window's boundaries.
 
-![Gameplay](screenshot2.png)
+![Gameplay](https://github.com/gopal96685/goflap/blob/develop/screenshot2.png)
 
 ## Contributing
 
