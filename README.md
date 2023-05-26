@@ -49,7 +49,7 @@ go build
 
 1. Run the game:
 
-./flappy-bird-game
+./goflap
 
 2. Use the spacebar to control the bird's movement. Press spacebar to make the bird jump and avoid the pipes.
 
